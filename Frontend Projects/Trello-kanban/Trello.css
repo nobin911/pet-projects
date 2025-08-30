@@ -1,0 +1,117 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(5, 5, 24);
+  font-family: Poppins;
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 100vh;
+  position: relative;
+}
+
+#newBoardBtn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  background-color: rgb(248, 112, 1);
+  padding: 8px 5px;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 10px;
+  outline: none;
+  box-shadow: 0 0 0 3px #fff;
+  cursor: pointer;
+}
+.boards {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+.board {
+  background-color: rgb(5, 5, 14);
+  margin-top: 70px;
+  border-radius: 10px;
+  /* border: 0.5px solid white; */
+  height: 75vh;
+  padding: 10px;
+  color: whitesmoke;
+  box-shadow: rgba(255, 255, 255, 0.596) 0px 1px 1px 0px;
+  position: relative;
+}
+.board h2 {
+  text-align: center;
+}
+
+.board .tasks #taskCreatedAt {
+  font-size: 10px;
+  font-style: italic;
+  text-align: right;
+  display: block;
+}
+.tasks {
+  height: 65%;
+  position: relative;
+}
+.task-input {
+  width: 100%;
+  padding: 8px 5px;
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 5px;
+}
+.task-add {
+  width: 100%;
+  background-color: rgb(248, 112, 1);
+  padding: 5px 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: whitesmoke;
+  font-weight: bold;
+  cursor: grab;
+}
+
+.card {
+  background-color: rgb(248, 112, 1);
+  margin-top: 5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  width: 260px;
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  cursor: grab;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+#contextMenu {
+  background-color: honeydew;
+  position: absolute;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: none;
+}
+#contextMenu li {
+  list-style: none;
+  font-size: 12px;
+  padding: 5px 3px;
+  cursor: pointer;
+}
+
+.timeStampTask {
+  font-size: 10px;
+  font-style: italic;
+}

@@ -1,0 +1,57 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trello Clone</title>
+    <link rel="stylesheet" href="Trello.css" />
+  </head>
+  <body>
+    <button id="newBoardBtn">+Create New Board</button>
+    <div class="boards">
+      <div id="todo" class="board">
+        <h2>Todo(<span id="todo-count">0</span>)</h2>
+        <div class="tasks" id="todo-tasks"></div>
+        <input
+          type="text"
+          class="task-input"
+          placeholder="Add a Task"
+          id="todo-input"
+        />
+        <button class="task-add" onClick="addTask(`todo`)">+Add Task</button>
+      </div>
+      <div id="doing" class="board">
+        <h2>Doing(<span id="doing-count">0</span>)</h2>
+        <div class="tasks" id="doing-tasks"></div>
+        <input
+          type="text"
+          class="task-input"
+          placeholder="Add a Task"
+          id="doing-input"
+        />
+        <button class="task-add" onClick="addTask('doing')">+Add Task</button>
+      </div>
+      <div id="done" class="board">
+        <h2>Done(<span id="done-count">0</span>)</h2>
+        <div class="tasks" id="done-tasks"></div>
+        <input
+          type="text"
+          class="task-input"
+          placeholder="Add a Task"
+          id="done-input"
+        />
+        <button class="task-add" onClick="addTask('done')">+Add Task</button>
+      </div>
+      <div id="contextMenu">
+        <ul>
+          <li id="editTask" onclick="editTask()">Edit</li>
+          <li id="deleteTask">Delete</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="Trello.js"></script>
+  </body>
+</html>
